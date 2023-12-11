@@ -14,6 +14,7 @@ const App = () => {
     if(text?.length === 0)
       return
     else
+    // @ts-ignore
       result.title = text
       setTodo(copy)
 /*    setTodo([...todo].map(el => {
@@ -54,6 +55,7 @@ const App = () => {
   const toggleIsCompleted = (id:number) => {
     const copy = [...todo]
     const result = copy.find(el => el.id === id)
+    // @ts-ignore
     result.isCompleted = !result?.isCompleted
     setTodo(copy)
   }
