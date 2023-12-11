@@ -1,0 +1,7 @@
+{
+	"product": [
+		{ "id": 1, "title": "json-server" ,"price" : 6000},
+		{ "id": 2, "title": "jsson-hello" ,"price" : 88000},
+		{ "id": 3, "title": "json-tomorrow","price" : 3000}
+	]
+}
