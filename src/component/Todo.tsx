@@ -18,9 +18,9 @@ const Todo:FC<Itodo> = ({todo,todoChange,removeTodo,toggleIsCompleted}) => {
   return (
     <div className='bg-zinc-800 py-3 px-4 w-80 flex rounded-2xl mb-4 justify-between  items-center'>
       <Check toggleIsCompleted={toggleIsCompleted} isCompleted={todo.isCompleted} />
-      <h1 className={todo.isCompleted ? 'ml-3 flex-auto text-left line-through' : 'ml-3 flex-auto text-left'}>{todo.title}</h1>
-      <BiSolidEditAlt onClick={todoChange} className='mr-3 cursor-pointer' size={22} />
-      <GoTrash onClick={removeTodo} className='cursor-pointer' size={18} />
+      <h1 className={todo.isCompleted ? 'ml-3 w-[200px] truncate  flex-auto text-left line-through' : 'ml-3 w-[200px] truncate  flex-auto text-left'}>{todo.title}</h1>
+      <BiSolidEditAlt onClick={todoChange} className='mr-3 hover:text-[#5667c0] transition duration-150 cursor-pointer' size={22} />
+      <GoTrash onClick={removeTodo} className='cursor-pointer transition duration-150 hover:text-[#c45959]' size={18} />
     </div>
   )
 }

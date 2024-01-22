@@ -1,5 +1,5 @@
 export interface Iproduct {
-    titlea: string,
-    body: string,
-  id: number,
+    title: string,
+    isCompleted: boolean,
+    id: number
 }
