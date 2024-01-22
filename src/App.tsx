@@ -1,7 +1,12 @@
 import { useState } from 'react'
 import Todo from './component/Todo'
 import { IoAdd } from 'react-icons/io5'
-import { Iproduct } from './types/Type'
+
+interface Iproduct {
+  title: string,
+  isCompleted: boolean,
+  id: number
+}
 
 const App = () => {
 	const [todo, setTodo] = useState<Iproduct[]>([])
